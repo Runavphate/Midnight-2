@@ -10,7 +10,7 @@
 | :--- | :--- |
 | **Live Demo (Vercel / Netlify)** | [https://midnight-counter.vercel.app](https://midnight-2-livid.vercel.app/) |
 | **GitHub Repository** | [https://github.com/Runavphate/Midnight-2](https://github.com/Runavphate/Midnight-2) |
-| **Demo Video (Wallet Connect + Circuit Call)** | [Watch Demo Video](https://youtube.com) *(Paste your recording link)* |
+| **Demo Video (Wallet Connect + Circuit Call)** | [Watch Demo Video](https://youtube.com) |
 
 ---
 
