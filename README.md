@@ -144,10 +144,12 @@ This project demonstrates the minimal viable implementation of **privacy-gated s
 ## 📸 Screenshots
 
 ### Screenshot 1 — Successful Contract Compilation
-![Compile Output](./screenshots/compile.png)
+
+<img width="960" height="239" alt="Compilemidnight" src="https://github.com/user-attachments/assets/64c769c6-8f60-407e-84af-76b2e55158cf" />
 
 ### Screenshot 2 — Contract Deployed to Testnet
-![Deploy Output](./screenshots/deploy.png)
+
+<img width="1920" height="1025" alt="Deploymidnight" src="https://github.com/user-attachments/assets/c882ef90-1212-4c6a-8309-99d6697c8614" />
 
 ---
 
