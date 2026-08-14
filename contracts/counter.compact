@@ -1,0 +1,36 @@
+pragma language_version >= 0.18;
+
+import CompactStandardLibrary;
+
+// PUBLIC:
+// - `counter` is public ledger state.
+// - Its value and successful state transitions are public.
+//
+// PRIVATE:
+// - `secret()` is a private witness supplied by the caller.
+// - The secret itself is never stored in public ledger state.
+//
+// DISCLOSURE:
+// - Only the Boolean result of comparing the private secret with `expected`
+//   is deliberately disclosed.
+// - The private secret itself is never disclosed.
+
+export ledger counter: Counter;
+
+witness secret(): Uint<64>;
+
+export circuit incrementIfValid(expected: Uint<64>): Boolean {
+  const privateSecret = secret();
+
+  const valid = disclose(privateSecret == expected);
+
+  if (valid) {
+    counter += 1;
+  }
+
+  return valid;
+}
+
+export circuit getCounter(): Uint<64> {
+  return counter;
+}
